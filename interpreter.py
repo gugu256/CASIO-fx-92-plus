@@ -2,3 +2,10 @@
 #
 # Written by gugu256
 
+import lexer
+
+def repl():
+    while True:
+        print(lexer.lex(input(">>> ")))
+
+repl()
