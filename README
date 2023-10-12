@@ -1,3 +1,5 @@
+<!> ABANDONED <!>
+
 This project is a tiny interpreter for the built-in programming language contained in CASIO fx-92+ calculators.
 
 This programming language only has 16 instructions, and there are only 7 different variables you can use.

@@ -50,6 +50,8 @@ def make_token(tok):
         return Token(tok.upper(), None)
     elif tok in list(msgs.keys()):
         return Token("MSG", msgs[tok])
+    elif tok == "newline":
+        return Token("NL", None, None)
     else:
         return Token(tok, None)
 
@@ -101,6 +103,7 @@ def lex(code):
 
         elif char in " \t\n":
             archaic_tokens.append(tok)
+            archaic_tokens.append("newline")
             tok = ""
         
         elif char == "}":

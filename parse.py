@@ -1,3 +1,5 @@
+import turtle
+
 # Reserved variables
 
 A = 0
@@ -10,3 +12,5 @@ M = 0
 x = 0
 y = 0
 
+def interpret(toks):
+    insay = False
